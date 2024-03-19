@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <hr>
+  <header class="header" >
+    <h1 id="title" class="title-center" ><i>Survey Form</i></h1>
+    <p id="description" class="title-desc"><b>To fulfill your needs, all we need is feedback from your side...</b></p>
+  </header>
+  <hr>
+  <br>
+
+  <!--Form starts here-->
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="name" id="name" class="form-control" placeholder="Enter your name" required>
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="age">Age (optional)</label>
+      <input type="number" id="number" class="form-control" placeholder="Age" min="10" max="99">
+
+    </div>
+    <div class="form-group">
+      <p>Which of these describes your role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option value="SELECT">Select</option>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        
+        <option value="employee">Serviceman</option>
+        <option value="housewife">Housewife</option>
+        <option value="other">Other</option>
+        <option value="PrefNotToSay">Prefer not to say</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Which of these domains you want to learn about?</p>
+      <label>
+        <input name="learn-about" value="web-dev" type="radio" class="input-radio" checked>
+        Web Development
+      </label>
+      <br>
+      <label>
+        <input name="learn-about" value="machine-learning" type="radio" class="input-radio" >
+        Machine Learning
+      </label>
+      <br>
+      <label>
+        <input name="learn-about" value="ai" type="radio" class="input-radio" >
+        Artificial Intelligence
+      </label>
+      <br>
+      <label>
+        <input name="learn-about" value="data-sci" type="radio" class="input-radio" >
+       Data Science
+      </label>
+      <br>
+      <label>
+        <input name="learn-about" value="DSA" type="radio" class="input-radio" >
+        Data Structures and Algorithms
+      </label>
+    </div>
+    <br>
+    <div class="form-group">
+      <p>What do you like to use while studying?</p>
+      <label>
+      <input  type="checkbox" class="input-checkbox" value="books">Books
+      </label>
+      <label>
+        <input type="checkbox" class="input-checkbox" value="laptop">Laptop
+      </label>
+      <label>
+        <input type="checkbox" class="input-checkbox" value="mobile">Smartphone
+      </label>
+      <label>
+        <input type="checkbox" class="input-checkbox" value="notes">Notes
+      </label>
+    </div>
+    <div class="form-group">
+      <p>What do you suggest about this form?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your suggestions"></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+    <button type="submit" class="submit-button" id="submit">Submit</button>
+    </div>
+  </form>
+  </div>
+  </body>
+</html>
